@@ -2,7 +2,7 @@
 Contributors: wpcure
 Tags: pluggable functions, overridden functions, reassigned functions, plugin conflict
 Requires at least: 3.5
-Tested up to: 3.7.1
+Tested up to: 3.8
 Stable tag: 1.0.0
 License: GPLv2 or later
 
