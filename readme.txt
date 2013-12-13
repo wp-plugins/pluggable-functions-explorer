@@ -25,3 +25,6 @@ Simply activate the plugin and visit Tools &rsaquo; Pluggable Functions
 
 = 1.0.0 =
 * Initial version for public release
+
+= 1.0.1 =
+* Minor Changes (Appearance) for WordPress 3.8
