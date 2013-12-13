@@ -28,7 +28,7 @@ class WPCure_Pluggable_Functions {
 	}
 
 	public function admin_page() {
-		echo '<h1>Pluggable Functions Explorer</h1>';
+		echo '<h2>Pluggable Functions Explorer</h2>';
 		if ( ! class_exists( 'ReflectionClass' ) || ! class_exists( 'ReflectionFunction' ) ) {
 			echo '<div id="message" class="error"><strong>Error: Reflection package does NOT exist. Thus, this plugin is NOT compatible with your PHP environment.</strong></div>';
 			return;
@@ -36,7 +36,8 @@ class WPCure_Pluggable_Functions {
 		$items = $this->get_pluggable_items();
 		echo '<p>The information in the following table sheds light on the <a href="http://codex.wordpress.org/Pluggable_Functions" target="_blank">Pluggable Functions</a> conditionally declared by WordPress Core.<br />In case a function has been overridden (reassigned) by another module, such as a plugin, the PHP file containing the <em>effective declaration</em> is shown.</p>';
 		echo '<table class="widefat">';
-		echo '<tr><th>Name</th><th>Type</th><th>Status</th><th>Effectively declared in File</th></tr>';
+		echo '<thead><tr><th>Name</th><th>Type</th><th>Status</th><th>Effectively declared in File</th></tr></thead>';
+		echo '<tbody>';
 		foreach ( $items as $item ) {
 			$filename = str_replace( ABSPATH, '', $item['effective_filename'] );
 			if ( $item['wpcore_filename'] == $item['effective_filename'] ) {
@@ -55,7 +56,7 @@ class WPCure_Pluggable_Functions {
 				echo '</tr>';
 			}
 		}
-		echo '</table>';
+		echo '</tbody></table>';
 	}
 
 	private function get_pluggable_items() {
