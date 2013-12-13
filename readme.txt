@@ -3,7 +3,7 @@ Contributors: wpcure
 Tags: pluggable functions, overridden functions, reassigned functions, plugin conflict
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 Check which Pluggable Functions have been overriden (reassigned), and in which PHP file
