@@ -3,7 +3,7 @@ Contributors: wpcure
 Tags: pluggable functions, overridden functions, reassigned functions, plugin conflict
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 Check which Pluggable Functions have been overriden (reassigned), and in which PHP file
@@ -28,3 +28,6 @@ Simply activate the plugin and visit Tools &rsaquo; Pluggable Functions
 
 = 1.0.1 =
 * Minor Changes (Appearance) for WordPress 3.8
+
+= 1.0.2 =
+* Show overriding Plugin or Theme name (slug)
