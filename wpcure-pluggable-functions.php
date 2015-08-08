@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/plugins/pluggable-functions-explorer/
 Description: Check which <strong>Pluggable Functions</strong> have been overriden (reassigned), and in which PHP file. Activate the plugin and visit <strong>Tools&nbsp;&rsaquo;&nbsp;Pluggable&nbsp;Functions</strong>
 Author: wpCure
 Author URI: https://wpcure.com/
-Version: 1.0.2
+Version: 1.0.3
 */
 
 class WPCure_Pluggable_Functions {
@@ -28,7 +28,7 @@ class WPCure_Pluggable_Functions {
 	}
 
 	public function admin_page() {
-		echo '<h2>Pluggable Functions Explorer</h2>';
+		echo '<h1>Pluggable Functions Explorer</h1>';
 		if ( ! class_exists( 'ReflectionClass' ) || ! class_exists( 'ReflectionFunction' ) ) {
 			echo '<div id="message" class="error"><strong>Error: Reflection package does NOT exist. Thus, this plugin is NOT compatible with your PHP environment.</strong></div>';
 			return;
