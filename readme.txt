@@ -2,8 +2,8 @@
 Contributors: wpcure
 Tags: pluggable functions, overridden functions, reassigned functions, plugin conflict
 Requires at least: 3.5
-Tested up to: 4.2
-Stable tag: 1.0.2
+Tested up to: 4.3
+Stable tag: 1.0.3
 License: GPLv2 or later
 
 Check which Pluggable Functions have been overriden (reassigned), and in which PHP file
@@ -31,3 +31,6 @@ Simply activate the plugin and visit Tools &rsaquo; Pluggable Functions
 
 = 1.0.2 =
 * Show overriding Plugin or Theme name (slug)
+
+= 1.0.3 =
+* Admin Page uses h1 heading in line with WordPress 4.3
